@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 1286594225}
   - component: {fileID: 1286594224}
   m_Layer: 0
-  m_Name: BasicObject
+  m_Name: Clock Element
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
