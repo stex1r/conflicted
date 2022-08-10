@@ -1,12 +1,12 @@
 using System;
 using UnityEngine;
 
-public class BasicScript : MonoBehaviour
+public class TickerOnSphere : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("awoken basic script");
+        Debug.Log("awoken ticking script for sphere");
         InvokeRepeating("timerSet", 0.1f,3.0f);
     }
 
