@@ -3,21 +3,14 @@ using UnityEngine;
 
 public class TickerOnSphere : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("awoken ticking script for sphere");
-        InvokeRepeating("timerSet", 0.1f,3.0f);
+        InvokeRepeating("timerSet", 1.0f,1.0f); // line from main (fixed)
+        Debug.Log("awoken ticking script for sphere"); // line from dependent (already has new logic)
     }
 
     public void timerSet()
     {
         Debug.Log($"tick: {DateTime.Now}");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
