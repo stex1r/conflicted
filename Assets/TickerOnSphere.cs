@@ -39,6 +39,6 @@ public class TickerOnSphere : MonoBehaviour
                         ...
                                 and here.
         */
-        Debug.Log($"timer killed at: {DateTime.Now}"); // f-2 fix on review request
+        Debug.Log($"for now, timer killed at: {DateTime.Now}"); // f-2 fix on review request + f-3 modified
     }
 }
