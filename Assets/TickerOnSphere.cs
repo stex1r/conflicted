@@ -16,11 +16,17 @@ public class TickerOnSphere : MonoBehaviour
     }
 
     /*
-     * f-2 method
+     * f-2 method. let's pretend it was changed during merge here ...
      */
     public void disableTicker()
     {
         CancelInvoke("timerSet");
-        Debug.Log($"timer killed at: {DateTime.Now}");
+        /* ...
+            ...
+                ...
+                        ...
+                                and here.
+        */
+        Debug.Log($"timer killed at: {DateTime.Now}"); // f-2 fix on review request
     }
 }
