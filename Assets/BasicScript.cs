@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class BasicScript : MonoBehaviour
@@ -8,6 +7,12 @@ public class BasicScript : MonoBehaviour
     void Start()
     {
         Debug.Log("awoken basic script");
+        InvokeRepeating("timerSet", 0.1f,3.0f);
+    }
+
+    public void timerSet()
+    {
+        Debug.Log($"tick: {DateTime.Now}");
     }
 
     // Update is called once per frame
